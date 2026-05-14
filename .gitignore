@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Build folders
+build/
+dist/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.pyc
+
+# VS Code settings
+.vscode/
+
+# Coverage
+coverage/
+
+# Temporary files
+temp/
+.tmp/
+
+# CSV exports (optional large files)
+data/cleaned/*.csv

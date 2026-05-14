@@ -16,8 +16,8 @@ function DistrictDropdown({
             try {
 
                 const response = await axios.get(
-                    `http://localhost:5000/api/districts/${stateId}`
-                );
+                    `${process.env.REACT_APP_API_URL}/api/districts/${stateId}`
+                )
 
                 setDistricts(response.data);
 

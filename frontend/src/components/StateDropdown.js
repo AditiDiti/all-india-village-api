@@ -15,8 +15,8 @@ function StateDropdown({
             try {
 
                 const response = await axios.get(
-                    'http://localhost:5000/api/states'
-                );
+                    `${process.env.REACT_APP_API_URL}/api/states`
+                )
 
                 setStates(response.data);
 

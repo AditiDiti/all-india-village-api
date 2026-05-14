@@ -12,8 +12,8 @@ function VillageList({ subdistrictId }) {
             try {
 
                 const response = await axios.get(
-                    `http://localhost:5000/api/villages/${subdistrictId}`
-                );
+                    `${process.env.REACT_APP_API_URL}/api/villages/${subdistrictId}`
+                )
 
                 setVillages(response.data.data);
 

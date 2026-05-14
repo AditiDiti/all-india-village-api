@@ -24,8 +24,8 @@ function SearchVillage() {
             try {
 
                 const response = await axios.get(
-                    `http://localhost:5000/api/search?village=${query}`
-                );
+                    `${process.env.REACT_APP_API_URL}/api/search?village=${query}`
+                )
 
                 setResults(response.data);
 
